@@ -27,9 +27,9 @@ const VideoMessageShown: Component<{
 }> = (props) => {
   return (
     <>
-      <div><a href={props.url} target='_blank'>视频消息</a></div>
+      <div><a href={"https://proxy.991008.xyz/tencent/"+props.url.slice(7)} target='_blank'>视频消息</a></div>
       <video autoplay={false} controls width="200px">
-        <source src={props.url} type="video/mp4" />
+        <source src={"https://proxy.991008.xyz/tencent/"+props.url.slice(7)} type="video/mp4" />
       </video>
     </>
   )
